@@ -77,20 +77,25 @@
                 NAV_layer {
                         display-name = "Navigation";
                         bindings = <
-                        &kp APOSTROPHE	&kp EXCLAMATION	&kp AT_SIGN	&kp HASH 	&kp DOLLAR	&kp PERCENT		&trans              	&kp AMPERSAND 	&kp ASTERISK	&kp ACUTE      	&kp LEFT_BRACE      	&bht RIGHT_BRACE LEFT_BRACE            
-                        &kp TAB       	&trans         	&trans     	&trans   	&trans    	&trans     		&kp LEFT_ARROW      	&kp DOWN_ARROW	&kp UP_ARROW	&kp RIGHT_ARROW	&kp LEFT_BRACKET    	&bht RIGHT_BRACKET LEFT_BRACKET        
-                        &kp LSHIFT    	&trans         	&trans     	&trans   	&trans    	&kp K_CMENU		&kp NON_US_BACKSLASH	&kp SLASH     	&kp MINUS   	&kp EQUAL      	&kp LEFT_PARENTHESIS	&bht RIGHT_PARENTHESIS LEFT_PARENTHESIS
-                                                                    &kp LCTRL	&kp NUM   	&kp LALT   		&trans              	&trans        	&trans      			
+                        &kp APOSTROPHE	&kp EXCLAMATION	&kp AT_SIGN	&kp HASH	&kp DOLLAR	&kp PERCENT		&trans              	&kp AMPERSAND 	&kp ASTERISK	&kp ACUTE      	&kp LEFT_BRACE      	&kp RIGHT_BRACE      
+                        &kp TAB       	&trans         	&trans     	&trans  	&trans    	&trans     		&kp LEFT_ARROW      	&kp DOWN_ARROW	&kp UP_ARROW	&kp RIGHT_ARROW	&kp LEFT_BRACKET    	&kp RIGHT_BRACKET    
+                        &kp LSHIFT    	&trans         	&trans     	&trans  	&trans    	&kp K_CMENU		&kp NON_US_BACKSLASH	&kp SLASH     	&kp MINUS   	&kp EQUAL      	&kp LEFT_PARENTHESIS	&kp RIGHT_PARENTHESIS
+                                                                    &trans  	&trans    	&trans     		&trans              	&trans        	&trans      			
                         >;
                 };
 
                 FN_layer {
                         display-name = "Function, F key";
                         bindings = <
-                        &trans	&kp BACKSLASH  	&kp SLASH   	&kp ASTERISK	&kp LEFT_BRACE      	&kp RIGHT_BRACE      		&trans      	&bht F7 NUMBER_7	&bht F8 NUMBER_8  	&bht F9 NUMBER_9	&kp F12	&trans  
-                        &trans	&kp SEMICOLON  	&kp EQUAL   	&kp PLUS    	&kp LEFT_BRACKET    	&kp RIGHT_BRACKET    		&trans      	&bht F4 NUMBER_4	&bht F5 NUMBER_5  	&bht F6 NUMBER_6	&kp F11	&trans  
-                        &trans	&kp EXCLAMATION	&kp QUESTION	&kp MINUS   	&kp LEFT_PARENTHESIS	&kp RIGHT_PARENTHESIS		&kp NUMBER_0	&bht F1 NUMBER_1	&bht F2 NUMBER_2  	&bht F3 NUMBER_3	&kp F10	&kp RALT
-                                                                &trans      	&trans              	&trans               		&trans      	&kp LCTRL       	&kp K_CONTEXT_MENU			
+//╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
+    ___        ___         ___           ___           ___          ___              ___            &kp F7        &kp F8        &kp F9         &kp F12       ___
+//├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+    ___        ___         ___           ___           ___          ___              ___            &kp F4        &kp F5        &kp F6         &kp F11       ___
+//├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+    ___        ___         ___           ___           ___          ___              ___            &kp F1        &kp F2        &kp F3         &kp F10       ___
+//├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
+                                               ___        ___           ___            ___           ___           ___                                       
+//                                           ╰──────╯╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯╰──────╯                                           
                         >;
 		};
 		

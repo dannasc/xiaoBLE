@@ -9,8 +9,8 @@
 #define COMBO_TIMEOUT 60
 
 #define DEF 0
-#define NAV_SYM 1
-#define NUM_FN 2
+#define NAV 1
+#define FN 2
 #define NUM 3
 #define SYS 4
 
@@ -65,32 +65,47 @@
                 DEF_layer {
                         display-name = "Base";
                         bindings = <
-                        &kp ESC   	&kp Q	&kp W	&kp E    	            &kp R  	                &kp T    		&kp Y    	&kp U  	    &kp I    	&kp O  	&kp P          	&kp GUI 
-                        &kp TAB   	&kp A	&kp S	&kp D    	            &kp F           	    &kp G    		&kp H    	&kp J  	    &kp K    	&kp L  	&sk TILDE CARET	&kp DEL 
-                        &kp LSHIFT	&lt NUM Z	&kp X	&bht LC(LS(C)) C    	&bht LC(LS(V)) V  	    &kp B    		&kp N    	&kp M  	    &kp COMMA	&kp DOT	&kp SEMICOLON  	&kp RALT
-                                                    &kp LCTRL	            &lt NUM_FN DOT	            &kp SPACE		&kp ENTER	&lt NAV_SYM	COMMA &kp BSPC 			
+            //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
+&bht LS(LC(LALT)) ESC  &bht LS(LC(LALT)) Q   &kp W    &kp E         &kp R         &kp T             &kp Y         &kp U         &bht PIPE I   &kp O         &lt FN P      &kp DEL
+            //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼──────|──────┼─────────────┼─────────────┤ ├──────┤
+&bht LS(LC(LA(LGUI))) TAB   &bht LG(A) A     &kp S    &kp D      &bht LG(F) F     &kp G            &bht HASH H    &kp J         &kp K         &kp L         &kp RET       &kp RA(RET)
+            //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├──────#──────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+&bht LCTRL BSPC    &lt FN Z    &bht LG(X) X   &bht LG(C) C   &bht LG(V) V  &bht LS(LC(LA(V))) B     &kp N         &kp M       &bht SEMI COMMA &bht COLON DOT &bht SQT QMARK  &kp RALT
+            //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
+                                                    &kp LSHFT      &sk LGUI      &lt NAV SPC       &lt NUM SPC    &kp BSPC    &bht RS(RC(RA(RGUI))) RS(RC(RA(H)))
+             //                                    ╰────────────┼──────────────┴─────────────╯   ╰─────────────┴─────────────┼─────────────╯
                         >;
                 };
 
                 
 
                 NAV_layer {
-                        display-name = "Nav, symbols";
+                        display-name = "Navigation";
                         bindings = <
-                        &kp APOSTROPHE	&kp EXCLAMATION	&kp AT_SIGN	&kp HASH 	&kp DOLLAR	&kp PERCENT		&trans              	&kp AMPERSAND 	&kp ASTERISK	&kp ACUTE      	&kp LEFT_BRACE      	&kp RIGHT_BRACE      
-                        &kp TAB       	&trans         	&trans     	&trans   	&trans    	&trans     		&kp LEFT_ARROW      	&kp DOWN_ARROW	&kp UP_ARROW	&kp RIGHT_ARROW	&kp LEFT_BRACKET    	&kp RIGHT_BRACKET    
-                        &kp LSHIFT    	&trans         	&trans     	&trans   	&trans    	&kp K_CMENU		&kp NON_US_BACKSLASH	&kp SLASH     	&kp MINUS   	&kp EQUAL      	&kp LEFT_PARENTHESIS	&kp RIGHT_PARENTHESIS
-                                                                    &kp LCTRL	&kp NUM   	&kp LALT   		&trans              	&trans        	&trans      			
+//╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
+    ___      &kp ESC       &kp LS(LC(TAB)) &kp UP      &kp LC(TAB)    &kp LG(TAB)      &kp FSLH     &kp UNDER     &kp PIPE       ___           ___           ___
+//├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼───toggle────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+    ___      &kp TAB       &kp LEFT      &kp DOWN      &kp RIGHT       ___             &kp HASH     &kp DLLR      &kp DOWN      &kp RIGHT      ___           ___
+//├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+    ___      ___            ___           ___           ___            ___             &kp AMPS      ___           ___           ___           ___           ___
+//├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
+                                          ___           ___            ___             ___           ___          ___
+//                                      ╰────────────╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯─────────────╯                                           
                         >;
                 };
 
-                NUM_FN {
-                        display-name = "Numbers, F keys";
+                FN_layer {
+                        display-name = "Function, F key";
                         bindings = <
-                        &trans	&kp BACKSLASH  	&kp SLASH   	&kp ASTERISK	&kp LEFT_BRACE      	&kp RIGHT_BRACE      		&trans      	&bht F7 NUMBER_7	&bht F8 NUMBER_8  	&bht F9 NUMBER_9	&kp F12	&trans  
-                        &trans	&kp SEMICOLON  	&kp EQUAL   	&kp PLUS    	&kp LEFT_BRACKET    	&kp RIGHT_BRACKET    		&trans      	&bht F4 NUMBER_4	&bht F5 NUMBER_5  	&bht F6 NUMBER_6	&kp F11	&trans  
-                        &trans	&kp EXCLAMATION	&kp QUESTION	&kp MINUS   	&kp LEFT_PARENTHESIS	&kp RIGHT_PARENTHESIS		&kp NUMBER_0	&bht F1 NUMBER_1	&bht F2 NUMBER_2  	&bht F3 NUMBER_3	&kp F10	&kp RALT
-                                                                &trans      	&trans              	&trans               		&trans      	&kp LCTRL       	&kp K_CONTEXT_MENU			
+//╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
+    ___        ___         ___           ___           ___          ___              ___            &kp F7        &kp F8        &kp F9         &kp F12       ___
+//├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+    ___        ___         ___           ___           ___          ___              ___            &kp F4        &kp F5        &kp F6         &kp F11       ___
+//├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+    ___        ___         ___           ___           ___          ___              ___            &kp F1        &kp F2        &kp F3         &kp F10       ___
+//├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
+                                               ___        ___           ___            ___           ___           ___                                       
+//                                           ╰──────╯╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯╰──────╯                                           
                         >;
 		};
 		

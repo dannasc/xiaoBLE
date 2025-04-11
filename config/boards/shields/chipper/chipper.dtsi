@@ -8,6 +8,7 @@
 	};
 
 	default_transform: keymap_transform_0 {
+		// https://zmk.dev/docs/config/battery#peripheral-battery-monitoring
 		compatible = "zmk,matrix-transform";
 		columns = <12>;
 		rows = <4>;

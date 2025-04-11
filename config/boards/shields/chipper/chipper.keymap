@@ -87,15 +87,10 @@
                 FN_layer {
                         display-name = "Function, F key";
                         bindings = <
-//╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-    ___        ___         ___           ___           ___          ___              ___            &kp F7        &kp F8        &kp F9         &kp F12       ___
-//├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    ___        ___         ___           ___           ___          ___              ___            &kp F4        &kp F5        &kp F6         &kp F11       ___
-//├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    ___        ___         ___           ___           ___          ___              ___            &kp F1        &kp F2        &kp F3         &kp F10       ___
-//├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
-                                               ___        ___           ___            ___           ___           ___                                       
-//                                           ╰──────╯╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯╰──────╯                                           
+                        &trans	&kp BACKSLASH  	&kp SLASH   	&kp ASTERISK	&kp LEFT_BRACE      	&kp RIGHT_BRACE      		&trans      	&bht F7 NUMBER_7	&bht F8 NUMBER_8  	&bht F9 NUMBER_9	&kp F12	&trans  
+                        &trans	&kp SEMICOLON  	&kp EQUAL   	&kp PLUS    	&kp LEFT_BRACKET    	&kp RIGHT_BRACKET    		&trans      	&bht F4 NUMBER_4	&bht F5 NUMBER_5  	&bht F6 NUMBER_6	&kp F11	&trans  
+                        &trans	&kp EXCLAMATION	&kp QUESTION	&kp MINUS   	&kp LEFT_PARENTHESIS	&kp RIGHT_PARENTHESIS		&kp NUMBER_0	&bht F1 NUMBER_1	&bht F2 NUMBER_2  	&bht F3 NUMBER_3	&kp F10	&kp RALT
+                                                                &trans      	&trans              	&trans               		&trans      	&kp LCTRL       	&kp K_CONTEXT_MENU			
                         >;
 		};
 		

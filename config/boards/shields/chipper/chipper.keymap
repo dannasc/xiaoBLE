@@ -77,10 +77,10 @@
                 NAV_layer {
                         display-name = "Navigation";
                         bindings = <
-&kp GRAVE 	&kp EXCL	&kp AT	&kp HASH	&kp DOLLAR	&kp PERCENT		&trans        	&kp AMPS      	&kp ASTRK   	&kp LEFT_BRACKET	&trans   	&bht LS(BACKSLASH) LS(RIGHT_BRACKET)
-&kp TAB   	&trans  	&trans	&trans  	&trans    	&trans     		&kp LEFT_ARROW	&kp DOWN_ARROW	&kp UP_ARROW	&kp RIGHT_ARROW 	&kp SQT  	&bht BACKSLASH RIGHT_BRACKET        
-&kp LSHIFT	&trans  	&trans	&trans  	&trans    	&trans     		&kp RA(MINUS) 	&kp RA(Q)     	&kp MINUS   	&kp ASTRK       	&kp EQUAL	&bht RPAR LPAR                      
-          	        	      	&trans  	&trans    	&trans     		&trans        	&trans        	&trans
+&bht LS(GRAVE) GRAVE	&kp EXCL	&kp AT	&kp HASH	&kp DOLLAR	&kp PERCENT		&trans        	&kp AMPS      	&kp ASTRK   	&kp LEFT_BRACKET	&trans   	&bht LS(BACKSLASH) LS(RIGHT_BRACKET)
+&kp TAB             	&trans  	&trans	&trans  	&trans    	&trans     		&kp LEFT_ARROW	&kp DOWN_ARROW	&kp UP_ARROW	&kp RIGHT_ARROW 	&kp SQT  	&bht BACKSLASH RIGHT_BRACKET        
+&kp LSHIFT          	&trans  	&trans	&trans  	&trans    	&trans     		&kp RA(MINUS) 	&kp RA(Q)     	&kp MINUS   	&kp ASTRK       	&kp EQUAL	&bht RPAR LPAR                      
+                    	        	      	&trans  	&trans    	&trans     		&trans        	&trans        	&trans
                         >;
 
                 };
@@ -113,10 +113,10 @@
                         		SYS_layer {
                         display-name = "Bluetooth, Reset";
                         bindings = <
-&trans	&kp BT_SEL 0	&kp BT_SEL 1	&kp BT_SEL 2	&kp BT_SEL 3     	&kp BT_SEL 4        		&kp &bt BT_CLR  	&trans	&trans	&trans          	&kp PRINTSCREEN	&trans         
-&trans	&trans      	&trans      	&trans      	&kp C_VOLUME_UP  	&kp C_BRIGHTNESS_DEC		&trans          	&trans	&trans	&kp F6 C_AL_LOCK	&trans         	&kp &bootloader
-&trans	&trans      	&trans      	&trans      	&kp C_VOLUME_DOWN	&kp C_BRIGHTNESS_INC		&kp C_PLAY_PAUSE	&trans	&trans	&trans          	&trans         	&kp &sys_reset 
-      	            	            	&trans      	&trans           	&trans              		&trans          	&trans	&trans	                	               	               
+&trans	&kp BT_SEL 0	&kp BT_SEL 1	&kp BT_SEL 2	&kp BT_SEL 3     	&kp BT_SEL 4        		&kp &bt BT_CLR  	&trans	&trans	&trans          	&kp PRINTSCREEN	&trans     
+&trans	&trans      	&trans      	&trans      	&kp C_VOLUME_UP  	&kp C_BRIGHTNESS_DEC		&trans          	&trans	&trans	&kp F6 C_AL_LOCK	&trans         	&bootloader
+&trans	&trans      	&trans      	&trans      	&kp C_VOLUME_DOWN	&kp C_BRIGHTNESS_INC		&kp C_PLAY_PAUSE	&trans	&trans	&trans          	&trans         	&sys_reset 
+      	            	            	&trans      	&trans           	&trans              		&trans          	&trans	&trans
                         >;
 		};
 

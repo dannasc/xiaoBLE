@@ -78,7 +78,7 @@
                         display-name = "Navigation";
                         bindings = <
 &bht LS(GRAVE) GRAVE	&kp EXCL	&kp AT	&kp HASH	&kp DOLLAR	&kp PERCENT		&trans        	&kp AMPS      	&kp ASTRK   	&kp LEFT_BRACKET	&trans   	&bht LS(BACKSLASH) LS(RIGHT_BRACKET)
-&kp TAB             	&trans  	&trans	&trans  	&trans    	&trans     		&kp LEFT_ARROW	&kp DOWN_ARROW	&kp UP_ARROW	&kp RIGHT_ARROW 	&kp SQT  	&bht BACKSLASH RIGHT_BRACKET        
+&kp TAB             	&trans  	&trans	&trans  	&trans    	&trans     		&kp LEFT_ARROW	&kp DOWN_ARROW	&kp UP_ARROW	&kp RIGHT_ARROW 	&kp SINGLE_QUOTE  	&bht BACKSLASH RIGHT_BRACKET        
 &kp LSHIFT          	&trans  	&trans	&trans  	&trans    	&trans     		&kp RA(MINUS) 	&kp RA(Q)     	&kp MINUS   	&kp ASTRK       	&kp EQUAL	&bht RPAR LPAR                      
                     	        	      	&trans  	&trans    	&trans     		&trans        	&trans        	&trans
                         >;

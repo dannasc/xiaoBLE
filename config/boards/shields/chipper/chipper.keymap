@@ -68,7 +68,7 @@
 &bht LA(F4) ESC 	&kp Q    	&kp W      	&kp E           	&kp R           	&bht LC(LA(T)) T		&kp Y    	&kp U      	&kp I    	&kp O  	&kp P          	&kp LGUI
 &bht LS(TAB) TAB	&kp A    	&kp S      	&kp D           	&kp F           	&kp G           		&kp H    	&kp J      	&kp K    	&kp L  	&kp SEMICOLON  	&kp DEL 
 &kp LSHIFT      	&lt NUM Z	&bht LALT X	&bht LC(LS(C)) C	&bht LC(LS(V)) V	&kp B           		&kp N    	&kp M      	&kp COMMA	&kp DOT	&bht LALT SLASH	&kp RALT
-                	         	           	&kp LCTRL       	&lt FN NUM      	&kp SPACE       		&kp ENTER	&lt NAV SYM	&kp BSPC
+                	         	           	&kp LCTRL       	&lt FN COMMA      	&kp SPACE       		&kp ENTER	&lt NAV DOT	&kp BSPC
                         >;
                 };
 

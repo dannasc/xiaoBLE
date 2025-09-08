@@ -14,31 +14,8 @@
 #define NUM 3
 #define SYS 4
 
-/ {
-    macros {
-	nayeon: nayeon {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap_time 10>
-		,<&macro_tap &kp N &kp A &kp Y &kp E &kp O &kp N &kp RET>;
-        };
-    };
-};
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-	 combo_cw {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <6 30>;
-            bindings = <&nayeon>;
-        };
-    };
-};
-
 &lt {
-    tapping-term-ms = <100>; // This is the value already set by default
+    tapping-term-ms = <125>; // This is the value already set by default
 };
 
 / {
@@ -71,7 +48,7 @@
                         bindings = <
 &bht F4 ESC     	&kp Q    	&kp W      	&kp E           	&kp R           	&bht LC(LA(T)) T		&kp Y    	&kp U      	&kp I    	&kp O  	&kp P          	&kp LGUI
 &bht LS(TAB) TAB	&kp A    	&kp S      	&kp D           	&kp F           	&kp G           		&kp H    	&kp J      	&kp K    	&kp L  	&kp SEMICOLON  	&kp DEL 
-&kp LSHIFT      	&lt NUM Z	&bht LALT X	&bht LC(LS(C)) C	&bht LC(LS(V)) V	&kp B           		&kp N    	&kp M      	&kp COMMA	&kp DOT	&bht LALT SLASH	&kp RALT
+&kp LSHIFT      	&kp Z	    &bht LALT X	&bht LC(LS(C)) C	&bht LC(LS(V)) V	&kp B           		&kp N    	&kp M      	&kp COMMA	&kp DOT	&bht LALT SLASH	&kp RALT
                 	         	           	&kp LCTRL       	&lt FN COMMA    	&kp SPACE       		&kp ENTER	&lt NAV DOT	&kp BSPC 	       	               	        
                         >;
                 };

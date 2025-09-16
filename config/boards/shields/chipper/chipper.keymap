@@ -2,6 +2,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include "keys_pt_abnt2.h"
+
 
 #define XXX &none
 #define ___ &trans
@@ -46,10 +48,10 @@
                 DEF_layer {
                         display-name = "Base";
                         bindings = <
-&bht F4 ESC     	&kp Q    	&kp W      	&kp E           	&kp R           	&bht LC(LA(T)) T		&kp Y    	&kp U      	&kp I    	&kp O  	&kp P          	&kp LGUI
-&bht LS(TAB) TAB	&kp A    	&kp S      	&kp D           	&kp F           	&kp G           		&kp H    	&kp J      	&kp K    	&kp L  	&kp SEMICOLON  	&kp DEL 
-&kp LSHIFT      	&kp Z	    &bht LALT X	&bht LC(LS(C)) C	&bht LC(LS(V)) V	&kp B           		&kp N    	&kp M      	&kp COMMA	&kp DOT	&bht LALT SLASH	&kp RALT
-                	         	           	&kp LCTRL       	&lt FN COMMA    	&kp SPACE       		&kp ENTER	&lt NAV DOT	&kp BSPC 	       	               	        
+&bht F4 ESC     	&kp Q	&kp W	&kp E           	&kp R           	&bht LC(LA(T)) T		&kp Y    	&kp U      	&kp I    	&kp O     	&kp P                 	&kp LGUI
+&bht LS(TAB) TAB	&kp A	&kp S	&kp D           	&kp F           	&kp G           		&kp H    	&kp J      	&kp K    	&kp L     	&kp PT_C_CEDILLA      	&kp DEL 
+&kp LSHIFT      	&kp Z	&kp X	&bht LC(LS(C)) C	&bht LC(LS(V)) V	&kp B           		&kp N    	&kp M      	&kp COMMA	&kp PT_DOT	&bht LALT PT_SEMICOLON	&kp RALT
+                	     	     	&kp LCTRL       	&lt FN COMMA    	&kp SPACE       		&kp ENTER	&lt NAV DOT	&kp BSPC 	          	                      	        
                         >;
                 };
 
@@ -58,10 +60,10 @@
                 NAV_layer {
                         display-name = "Navigation";
                         bindings = <
-&bht LS(GRAVE) GRAVE	&kp EXCL   	&kp AT	&kp HASH	&kp DOLLAR	&kp PERCENT		&trans        	&kp AMPS      	&kp ASTRK   	&trans         	&kp LEFT_BRACKET	&bht LS(BACKSLASH) LS(RIGHT_BRACKET)
-&kp TAB             	&kp RA(W)	&trans	&trans  	&trans    	&kp AMPS   		&kp LEFT_ARROW	&kp DOWN_ARROW	&kp UP_ARROW	&kp RIGHT_ARROW	&kp SINGLE_QUOTE	&bht BACKSLASH RIGHT_BRACKET        
-&kp LSHIFT          	&trans     	&trans	&trans  	&trans    	&trans     		&kp RA(MINUS) 	&kp RA(Q)     	&kp ASTRK   	&kp MINUS      	&kp EQUAL       	&bht RPAR LPAR                      
-                    	           	      	&trans  	&trans    	&trans     		&trans        	&trans        	&trans          
+&bht PT_DQT PT_SQT	&kp PT_EXCL 	&kp PT_AT	&kp PT_HASH	&kp PT_DOLLAR	&kp PT_PERCENT		&trans          	&kp PT_AMPS   	&kp PT_ASTRK	&trans         	&kp PT_ACUTE	&bht PT_RIGHT_BRACE PT_LEFT_BRACE    
+&kp LA(TAB)       	&kp PT_QMARK	&trans   	&trans     	&trans       	&kp PT_AMPS   		&kp LEFT_ARROW  	&kp DOWN_ARROW	&kp UP_ARROW	&kp RIGHT_ARROW	&kp PT_TILDE	&bht PT_RIGHT_BRACKET PT_LEFT_BRACKET
+&kp LSHIFT        	&trans      	&trans   	&trans     	&trans       	&trans        		&kp PT_BACKSLASH	&kp PT_SLASH  	&kp PT_ASTRK	&kp PT_MINUS   	&kp PT_EQUAL	&bht PT_RPAR PT_LPAR                 
+                  	            	         	&trans     	&trans       	&trans        		&trans          	&trans        	&trans      	               	            	                                     
                         >;
 
                 };
@@ -69,10 +71,10 @@
                 FN_layer {
                         display-name = "Function, F key";
                         bindings = <
-&trans	&trans	&kp RA(Q)    	&kp ASTRK	&kp PLUS 	&bht LS(BACKSLASH) LS(RIGHT_BRACKET)		&trans      	&bht F7 NUMBER_7	&bht F8 NUMBER_8	&bht F9 NUMBER_9	&kp F12	&trans
-&trans	&trans	&kp RA(MINUS)	&kp EQUAL	&kp MINUS	&bht BACKSLASH RIGHT_BRACKET        		&trans      	&bht F4 NUMBER_4	&bht F5 NUMBER_5	&bht F6 NUMBER_6	&kp F11	&trans
-&trans	&trans	&kp PIPE2    	&trans   	&trans   	&bht RPAR LPAR                      		&kp NUMBER_0	&bht F1 NUMBER_1	&bht F2 NUMBER_2	&bht F3 NUMBER_3	&kp F10	&trans
-      	      	             	&trans   	&trans   	&trans                              		&trans      	&trans          	&trans          	                	       	      
+&trans	&trans	&kp PT_SLASH    	&kp PT_ASTRK	&kp PT_PLUS 	&bht PT_RIGHT_BRACE PT_LEFT_BRACE    		&trans      	&bht F7 NUMBER_7	&bht F8 NUMBER_8	&bht F9 NUMBER_9	&kp F12	&trans
+&trans	&trans	&kp PT_BACKSLASH	&kp PT_EQUAL	&kp PT_MINUS	&bht PT_RIGHT_BRACKET PT_LEFT_BRACKET		&trans      	&bht F4 NUMBER_4	&bht F5 NUMBER_5	&bht F6 NUMBER_6	&kp F11	&trans
+&trans	&trans	&kp PT_PIPE     	&kp PT_COMMA	&kp PT_DOT  	&bht PT_RPAR PT_LPAR                 		&kp NUMBER_0	&bht F1 NUMBER_1	&bht F2 NUMBER_2	&bht F3 NUMBER_3	&kp F10	&trans
+      	      	                	&trans      	&trans      	&trans                               		&trans      	&trans          	&trans          	                	       	      
                         >;
 		};
 		

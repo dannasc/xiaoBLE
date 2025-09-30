@@ -19,7 +19,20 @@
 &lt {
     tapping-term-ms = <125>; // This is the value already set by default
 };
-
+$1
+/ {
+    alt_nav: alt_nav {
+        compatible = "zmk,behavior-macro";
+        label = "ALT_NAV";
+        #binding-cells = <0>;
+        bindings = <
+            &macro_press &kp LALT
+            &macro_press &mo NAV
+            &macro_release &mo NAV
+            &macro_release &kp LALT
+        >;
+    };
+};
 / {
         bht: balanced_hold_taps {
             compatible = "zmk,behavior-hold-tap";
@@ -61,8 +74,8 @@
                         display-name = "Navigation";
                         bindings = <
 &bht PT_DQT PT_SQT	&kp PT_EXCL 	&kp PT_AT	&kp PT_HASH	&kp PT_DOLLAR	&kp PT_PERCENT		&trans          	&kp PT_AMPS   	&kp PT_ASTRK	&trans         	&kp PT_ACUTE	&bht PT_RIGHT_BRACE PT_LEFT_BRACE    
-&kp LA(TAB)       	&kp PT_QMARK	&trans   	&trans     	&trans       	&kp PT_AMPS   		&kp LEFT_ARROW  	&kp DOWN_ARROW	&kp UP_ARROW	&kp RIGHT_ARROW	&kp PT_TILDE	&bht PT_RIGHT_BRACKET PT_LEFT_BRACKET
-&kp LSHIFT        	&trans      	&trans   	&trans     	&trans       	&trans        		&kp PT_BACKSLASH	&kp PT_SLASH  	&kp PT_ASTRK	&kp PT_MINUS   	&kp PT_EQUAL	&bht PT_RPAR PT_LPAR                 
+&kp TAB       	    &kp PT_QMARK	&trans   	&trans     	&trans       	&kp PT_AMPS   		&kp LEFT_ARROW  	&kp DOWN_ARROW	&kp UP_ARROW	&kp RIGHT_ARROW	&kp PT_TILDE	&bht PT_RIGHT_BRACKET PT_LEFT_BRACKET
+&trans         	    &trans      	&trans   	&trans     	&trans       	&trans        		&kp PT_BACKSLASH	&kp PT_SLASH  	&kp PT_ASTRK	&kp PT_MINUS   	&kp PT_EQUAL	&bht PT_RPAR PT_LPAR                 
                   	            	         	&trans     	&trans       	&trans        		&trans          	&trans        	&trans      	               	            	                                     
                         >;
 
@@ -71,10 +84,10 @@
                 FN_layer {
                         display-name = "Function, F key";
                         bindings = <
-&trans	&trans	&kp PT_SLASH    	&kp PT_ASTRK	&kp PT_PLUS 	&bht PT_RIGHT_BRACE PT_LEFT_BRACE    		&trans      	&bht F7 NUMBER_7	&bht F8 NUMBER_8	&bht F9 NUMBER_9	&kp F12	&trans
-&trans	&trans	&kp PT_BACKSLASH	&kp PT_EQUAL	&kp PT_MINUS	&bht PT_RIGHT_BRACKET PT_LEFT_BRACKET		&trans      	&bht F4 NUMBER_4	&bht F5 NUMBER_5	&bht F6 NUMBER_6	&kp F11	&trans
-&trans	&trans	&kp PT_PIPE     	&kp PT_COMMA	&kp PT_DOT  	&bht PT_RPAR PT_LPAR                 		&kp NUMBER_0	&bht F1 NUMBER_1	&bht F2 NUMBER_2	&bht F3 NUMBER_3	&kp F10	&trans
-      	      	                	&trans      	&trans      	&trans                               		&trans      	&trans          	&trans          	                	       	      
+&kp PT_DQT	&trans	&kp PT_SLASH    	&kp PT_ASTRK	&kp PT_PLUS 	&bht PT_RIGHT_BRACE PT_LEFT_BRACE    		&trans      	&bht F7 NUMBER_7	&bht F8 NUMBER_8	&bht F9 NUMBER_9	&kp F12	&trans
+&trans	    &trans	&kp PT_BACKSLASH	&kp PT_EQUAL	&kp PT_MINUS	&bht PT_RIGHT_BRACKET PT_LEFT_BRACKET		&trans      	&bht F4 NUMBER_4	&bht F5 NUMBER_5	&bht F6 NUMBER_6	&kp F11	&trans
+&trans	    &trans	&kp PT_PIPE     	&kp PT_COMMA	&kp PT_DOT  	&bht PT_RPAR PT_LPAR                 		&kp NUMBER_0	&bht F1 NUMBER_1	&bht F2 NUMBER_2	&bht F3 NUMBER_3	&kp F10	&trans
+      	      	                	    &trans      	&trans      	&trans                               		&trans      	&trans          	&trans          	                	       	      
                         >;
 		};
 		

@@ -82,7 +82,7 @@
                         display-name = "Navigation";
                         bindings = <
 &bht PT_DQT PT_SQT	&kp PT_EXCL 	&kp PT_AT	&kp PT_HASH	&kp PT_DOLLAR	&kp PT_PERCENT		&trans          	&kp PT_AMPS   	&kp PT_ASTRK	&trans         	&kp PT_ACUTE	&bht PT_RIGHT_BRACE PT_LEFT_BRACE    
-&kp LA(TAB)       	&kp PT_QMARK	&trans   	&trans     	&trans       	&kp PT_AMPS   		&kp LEFT_ARROW  	&kp DOWN_ARROW	&kp UP_ARROW	&kp RIGHT_ARROW	&kp PT_TILDE	&bht PT_RIGHT_BRACKET PT_LEFT_BRACKET
+&kp LA(TAB)       	    &kp PT_QMARK	&trans   	&trans     	&trans       	&kp PT_AMPS   		&kp LEFT_ARROW  	&kp DOWN_ARROW	&kp UP_ARROW	&kp RIGHT_ARROW	&kp PT_TILDE	&bht PT_RIGHT_BRACKET PT_LEFT_BRACKET
 &trans         	    &trans      	&trans   	&trans     	&trans       	&trans        		&kp PT_BACKSLASH	&kp PT_SLASH  	&kp PT_ASTRK	&kp PT_MINUS   	&kp PT_EQUAL	&bht PT_RPAR PT_LPAR                 
                   	            	         	&trans     	&trans       	&trans        		&trans          	&trans        	&trans      	               	            	                                     
                         >;
@@ -92,9 +92,9 @@
                 FN_layer {
                         display-name = "Function, F key";
                         bindings = <
-&kp PT_DQT	&trans	&kp PT_SLASH    	&kp PT_ASTRK	&kp PT_PLUS 	&bht PT_RIGHT_BRACE PT_LEFT_BRACE    		&trans      	&bht F7 NUMBER_7	&bht F8 NUMBER_8	&bht F9 NUMBER_9	&kp F12	&trans
-&kp LA(TAB) &trans	&kp PT_BACKSLASH	&kp PT_EQUAL	&kp PT_MINUS	&bht PT_RIGHT_BRACKET PT_LEFT_BRACKET		&trans      	&bht F4 NUMBER_4	&bht F5 NUMBER_5	&bht F6 NUMBER_6	&kp F11	&trans
-&caps_word  &trans	&kp PT_PIPE     	&kp PT_COMMA	&kp PT_DOT  	&bht PT_RPAR PT_LPAR                 		&kp NUMBER_0	&bht F1 NUMBER_1	&bht F2 NUMBER_2	&bht F3 NUMBER_3	&kp F10	&trans
+&kp PT_DQT	    &trans	&kp PT_SLASH    	&kp PT_ASTRK	&kp PT_PLUS 	&bht PT_RIGHT_BRACE PT_LEFT_BRACE    		&trans      	&bht F7 NUMBER_7	&bht F8 NUMBER_8	&bht F9 NUMBER_9	&kp F12	&trans
+&kp LA(TAB)	    &trans	&kp PT_BACKSLASH	&kp PT_EQUAL	&kp PT_MINUS	&bht PT_RIGHT_BRACKET PT_LEFT_BRACKET		&trans      	&bht F4 NUMBER_4	&bht F5 NUMBER_5	&bht F6 NUMBER_6	&kp F11	&trans
+&caps_word	    &trans	&kp PT_PIPE     	&kp PT_COMMA	&kp PT_DOT  	&bht PT_RPAR PT_LPAR                 		&kp NUMBER_0	&bht F1 NUMBER_1	&bht F2 NUMBER_2	&bht F3 NUMBER_3	&kp F10	&trans
       	      	                	    &trans      	&trans      	&trans                               		&trans      	&trans          	&trans          	                	       	      
                         >;
 		};
@@ -119,8 +119,8 @@
                         bindings = <
 &trans    	&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4		&kp C_NEXT      	&trans           	&trans              	&trans         	&kp PRINTSCREEN	&trans
 &trans    	&trans      	&trans      	&trans      	&trans      	&trans      		&kp C_PLAY_PAUSE	&kp C_VOLUME_UP  	&kp C_BRIGHTNESS_INC	&kp C_AL_LOGOFF	&trans         	&bootloader   
-&bt BT_CLR	&bt BT_PRV  	&bt BT_NXT  	&trans      	&trans      	&trans		&kp C_PREVIOUS  	&kp C_VOLUME_DOWN	&kp C_BRIGHTNESS_DEC	&trans         	&kp A          	&sys_reset    
-          	            	            	&bt BT_CLR_ALL 	&trans      	&trans      		&trans          	&trans           	&trans              	               	               	              
+&bt BT_CLR	&bt BT_PRV  	&bt BT_NXT  	&trans      	&trans      	&bt BT_CLR_ALL      &kp C_PREVIOUS  	&kp C_VOLUME_DOWN	&kp C_BRIGHTNESS_DEC	&trans         	&kp A          	&sys_reset    
+          	            	            	&trans      	&trans      	&trans      		&trans          	&trans           	&trans              	               	               	              
                        >;
 		};
 
